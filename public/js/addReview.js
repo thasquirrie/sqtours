@@ -1,10 +1,6 @@
 import axios from 'axios';
 import { showAlert } from './alert';
 
-import dotenv from 'dotenv';
-
-dotenv.config({ path: './config.env' });
-
 // console.log(process.env.DATABASE);
 
 export const addReview = async (tourId, userId, rating, review) => {

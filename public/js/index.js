@@ -40,7 +40,7 @@ if (loginForm) {
 }
 
 if (reviewForm) {
-  return reviewForm.addEventListener('submit', (e) => {
+  reviewForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const tourId = document.querySelector('#tour_id').value;
     const userId = document.querySelector('#user_id').value;
