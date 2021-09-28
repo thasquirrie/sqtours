@@ -1,0 +1,29 @@
+extend base
+
+block content
+  main.main
+    .login-form
+      h2.heading-secondary.ma-bt-lg Write a review for this tour
+      form#review.form
+        .form__group
+          //- label.form__label(for='user_id') User ID
+          input#user_id.form__input(type='hidden' value=`${userId}`, required autocomplete='review' readonly)
+        .form__group
+          //- label.form__label(for='tour_id') Tour ID
+          input#tour_id.form__input(type='hidden' value=`${tourId}`, required autocomplete='review' readonly)
+        .form__group
+          label.form__label(for='rating') Rating
+          input#rating.form__input(type='number' placeholder='1 - 5', required min='1' max='5' autocomplete='rating')
+        .form__group
+          label.form__label(for='reviews') Review
+          textarea#reviews.form__input(type='text' placeholder='', required autocomplete='reviews')
+        .form__group
+          button.btn.btn--green Submit
+
+
+
+
+
+          //- .form__group.ma-bt-md
+          //- label.form__label(for='password') Password
+          //- input#password.form__input(type='password' placeholder='••••••••', required, minlength='8' autocomplete='current-password')
